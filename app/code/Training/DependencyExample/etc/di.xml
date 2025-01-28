@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+   <preference for="Training\DependencyExample\Model\InjectableInterface"
+               type="Training\DependencyExample\Model\Injectable" />
+
+   <type name="Training\DependencyExample\Model\Main">
+    <arguments>
+      <argument name="util" xsi:type="object">Training\DependencyExample\Model\Util</argument>
+      <argument name="data" xsi:type="array">
+        <item name="id" xsi:type="string">virendra, i am a constructor argument passed down through dependency injection</item>
+         
+      </argument>
+    </arguments>
+
+   </type>
+</config>

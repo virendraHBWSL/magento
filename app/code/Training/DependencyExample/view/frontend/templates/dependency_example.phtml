@@ -1,0 +1,14 @@
+<?php /** @var Training\DependencyExample\Block\Example $block */ ?>
+
+<div>
+    <h2>Virendra ,dependency injection</h2>
+</div>
+<h2>
+    class Main id is: <?= $block->getMain()->getId() ?>
+</h2>
+<h2>
+    class Injetable id is: <?= $block->getMain()->getInjectable()->getId()?>
+</h2>
+<h2>
+     AbstractUtil :  <?= $block->getMain()->getUtil()->getName()?>
+</h2>

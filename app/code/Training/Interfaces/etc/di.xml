@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+   <preference for="Training\Interfaces\Api\SupplierRepositoryInterface"
+               type="Training\Interfaces\Model\SupplierRepository" />
+
+      <preference for="Training\Interfaces\Api\SupplierInterface"
+               type="Training\Interfaces\Model\Supplier" />
+
+  
+</config>

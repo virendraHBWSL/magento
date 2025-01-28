@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+   
+
+    <type name="Training\ReplaceConstructor\ViewModel\example">
+     <arguments>
+       <argument name="defaultName" xsi:type="object">Training\ReplaceConstructor\Model\UpperCaseName</argument>
+     </arguments>
+
+    </type>
+</config>
