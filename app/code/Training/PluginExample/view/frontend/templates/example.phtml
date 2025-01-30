@@ -1,0 +1,11 @@
+<? /** @var  Magento\Framework\View\Element\Template $block */ ?>
+
+<h1>hello virendra, we are learning plugins</h1>
+
+<div>
+    <h2>
+        <strong>
+        <?= $block->getViewModel()->getProductKey($block->getRequest()) ?>
+        </strong>
+    </h2>
+</div>
