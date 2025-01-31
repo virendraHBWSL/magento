@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <system>
+        <tab id="training" sortOrder="100">
+            <label>Training</label>
+        </tab>
+
+        <section id="training" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>training</tab>
+            <label>Cron Config Path</label>
+            <resource>Training_CronConfigPath::config</resource>
+
+            <group id="cron" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Virendra Cron Settings</label>
+
+                <field id="cron_expr" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Cron Expression</label>
+                    <comment>Virendra,Define the cron expression for scheduling</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

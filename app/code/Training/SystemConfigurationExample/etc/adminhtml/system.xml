@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <system>
+        <tab id="training" sortOrder="10">
+            <label>Virendra Training</label>
+        </tab>
+        
+        <section id="training" sortOrder="100" showInStore="1" showInDefault="1" showInWebsite="1">
+            <tab>training</tab>
+            <resource>Magento_Config::config</resource>
+            <label>Virendra Training 1</label>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Virendra General Settings</label>
+                
+                <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>this is custom comment</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
