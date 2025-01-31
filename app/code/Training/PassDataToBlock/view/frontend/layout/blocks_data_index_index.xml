@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+   <body>
+   <referenceContainer name="content" >
+    <block name="blocks_data"
+           class="Training\PassDataToBlock\Block\Example"
+           template="Training_PassDataToBlock::example.phtml" >
+        
+        <arguments>
+            <argument name="description" xsi:type="string">passing data to block from layout.xml file</argument>
+        </arguments>
+                </block> 
+    </referenceContainer>
+   </body>
+</page>
+
